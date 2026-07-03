@@ -3,6 +3,7 @@ body {
     line-height: 1.8;
     color: #818181;
     margin: 0;
+    padding-top: 50px; /* clears the fixed navbar (50px tall) so content isn't hidden under it */
 }
 
 h2 {
@@ -157,11 +158,18 @@ h4 {
     background-color: #00235B;
     z-index: 9999;
     border: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
     font-size: 12px !important;
     line-height: 1.42857143 !important;
     letter-spacing: 4px;
     border-radius: 0;
     font-family: Montserrat, sans-serif;
+}
+
+.navbar > .container {
+    width: 100%;
 }
 
 .navbar li a,
@@ -178,12 +186,6 @@ h4 {
 .navbar-default .navbar-toggle {
     border-color: transparent;
     color: #fff !important;
-}
-
-footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #98DFD6;
 }
 
 .slideanim {
@@ -221,76 +223,11 @@ footer .glyphicon {
         -webkit-transform: translateY(0%);
     }
 }
-/*
-@media screen and (max-width: 768px) {
-    .jumbotron {
-        padding: 80px 15px;
-    }
-    .container {
-        width: 100%;
-    }
-    .container-fluid {
-        padding: 1em;
-    }
-    .thumbnail {
-        height: auto;
-    }
 
-    .thumbnail img {
-        width: 100%;
-        height: auto;
-        border-radius: 0;
-    }
-    .col-sm-4 {
-        text-align: center;
-        margin: 25px 0;
-    }
-
-    .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .jumbotron {
-        padding: 100px;
-        
-    }
-    
-    .container {
-        padding: 0.5em;
-        width: auto;
-    }
-
-    .logo {
-        font-size: 150px;
-    }
-
-    .thumbnail {
-        padding: 5px;
-        height: auto;
-    }
-    .thumbnail img {
-        width: 100%;
-        height: auto;
-        border-radius: 0;
-    }
-}
-
-@media screen  and (max-width: 320px) {
-    .jumbotron {
-        width: 100%;
-    }
-
-.container{
-    width: 100%;
-}
-}
-*/
 #logo2 {
-    height: 40%;
-    width: 40%;
+    width: 30%;
+    
+    height: auto;
     animation: move 2s infinite;
 }
 
@@ -309,10 +246,9 @@ footer .glyphicon {
 }
 
 #dogcat {
-    width: 110%;
+    width: 100%;
     border-radius: 10%;
-    margin: 30%;
-
+    margin-top: 30px;
 }
 
 #vm {
@@ -338,24 +274,50 @@ footer .glyphicon {
     width: auto;
 }
 
-footer {
+footer.site-footer {
     background-color: #00235B;
     color: white;
-    padding: 20px 0;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
 }
 
-footer a {
+.footer-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social a {
     color: white;
-    margin: 0 10px;
-    font-size: 24px;
+    margin-right: 16px;
+    font-size: 16px;
+    line-height: 1;
 }
 
-footer a:hover {
+.footer-social a:last-child {
+    margin-right: 0;
+}
+
+.footer-social a:hover {
     color: lightgray;
 }
 
-#footernames h6 {
+.footer-credit {
     color: white;
+    font-size: 11px;
+    letter-spacing: 1px;
     text-align: center;
 }
 
@@ -372,4 +334,81 @@ footer a:hover {
 #login img {
     width: 200px;
     height: auto;
+}
+
+/* ===== Responsive breakpoints ===== */
+
+/* Tablets: shrink the nav text/spacing before it has to wrap */
+@media screen and (max-width: 991px) {
+    .navbar-nav > li > a {
+        padding: 12px 8px;
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+}
+
+/* Phones/small tablets: Bootstrap's hamburger menu kicks in below 768px */
+@media screen and (max-width: 767px) {
+    .jumbotron {
+        padding: 60px 20px;
+    }
+    .container-fluid {
+        padding: 1em;
+    }
+    .thumbnail {
+        height: auto;
+    }
+    .thumbnail img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .col-sm-4 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #logo2 {
+        width: 55%;
+    }
+    #dogcat,
+    #vm {
+        width: 100%;
+        margin: 20px 0;
+        border-radius: 10px;
+    }
+    .customer {
+        width: 130px;
+        height: 130px;
+    }
+    .item h4 {
+        margin: 30px 0;
+    }
+    .panel-footer li {
+        display: inline-block;
+        margin: 0 8px;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    .jumbotron {
+        padding: 40px 15px;
+    }
+    #logo2 {
+        width: 65%;
+        min-width: 0;
+    }
+    .navbar-brand {
+        font-size: 16px !important;
+    }
 }

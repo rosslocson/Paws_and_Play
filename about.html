@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Paws & Play - About Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        /* Each section fills exactly one screen (viewport height minus the
+           50px fixed navbar), so the user sees About Us, then scrolls to
+           see Our Values as its own full screen. */
+        #about,
+        #values {
+            min-height: calc(100vh - 50px);
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        #about > .row,
+        #values > .row {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body id="myPage">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Paws & Play</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="active"><a href="about.html">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="packages.html">PACKAGES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- About Section -->
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+                <br>
+                <h2>About Us</h2>
+                <h4>At PAWS and PLAY Pet Care Services, we understand that your pets are more than just animals -
+                    they're family. That's why we're dedicated to providing the highest quality care and services to
+                    ensure the health, happiness, and well-being of your furry friends.<br><br>
+                    With a team of experienced and passionate pet care professionals, we offer a range of services
+                    including grooming, pet sitting, and more. Whether you need daily dog walks while
+                    you're at work or overnight pet sitting while you're away, you can trust us to provide your pets
+                    with the love and attention they deserve.<br><br>
+                    Our mission is to create a safe, loving, and nurturing environment for all pets in our care. We
+                    treat every pet as if they were our own, and we strive to build long-lasting relationships with both
+                    pets and their owners.<br>
+                </h4>
+                <button class="btn btn-default btn-lg"><a href="contact.html">Get in Touch</a></button>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon logo"><img id="dogcat" src="assets/dogcat.png" class="img-responsive"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="values" class="container-fluid bg-grey">
+        <div class="row">
+            <div class="col-sm-4">
+                <span class="glyphicon logo"><img id="vm" src="assets/vmpic.jpg" class="img-responsive"></span>
+            </div>
+            <div class="col-sm-8">
+                <h2>Our Values</h2>
+                <h4><strong>MISSION:</strong> At Paws & Play, our mission is to enrich the lives of pets and their
+                    owners by providing exceptional products and services that promote health, happiness, and
+                    well-being.
+                    We are dedicated to fostering a strong bond between pets and their families and to being a trusted
+                    partner in their care.
+                    Through our commitment to quality, innovation, and customer satisfaction, we strive to be the
+                    leading provider of pet products and services, delivering value and joy to every pet and owner we
+                    serve.</h4>
+                <h4><strong>VISION:</strong> Our vision at Paws & Play is to create a world where every pet is happy,
+                    healthy, and loved.
+                    We envision a future where pets and their owners share deep, fulfilling relationships built on
+                    trust, companionship, and mutual well-being.
+                    We aim to be a driving force in the pet care industry, setting the standard for excellence in
+                    products and services that enhance the lives of pets and their families.
+                    We envision a world where our commitment to quality, innovation, and customer satisfaction is
+                    recognized and respected, making us the top choice for pet owners everywhere.
+                    Through our dedication to the well-being of pets and our passion for creating meaningful connections
+                    between animals and humans, we strive to make a positive impact on the world, one wagging tail and
+                    purring kitty at a time.</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-social">
+                <a href="https://www.facebook.com/YourFacebookPage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/YourInstagramPage" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/YourTwitterPage" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@YourTikTokPage" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="footer-credit">Web Systems and Technologies Midterm Project</div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

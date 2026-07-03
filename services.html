@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Paws & Play - Services</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="myPage">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Paws & Play</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li class="active"><a href="services.html">SERVICES</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="packages.html">PACKAGES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Services Section -->
+    <div id="services" class="container-fluid text-center">
+        <h2><strong>WHAT WE OFFER</strong></h2>
+
+        <div class="row slideanim">
+            <div class="col-sm-4">
+                <span class="glyphicon logo"><img src="assets/groom.png" class="img-logo"></span>
+                <h4 class="service-title">PET GROOMING</h4>
+                <p>This includes services such as bathing, brushing, haircuts, nail trimming, and ear cleaning.</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon logo"><img src="assets/supplies.png" class="img-logo"></span>
+                <h4 class="service-title">PET SUPPLIES</h4>
+                <p>Selling a variety of pet products such as food, treats, toys, grooming supplies, and accessories.</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon logo"><img src="assets/board.png" class="img-logo"></span>
+                <h4 class="service-title">PET BOARDING</h4>
+                <p>Providing a safe and comfortable place for pets to stay while their owners are away.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-social">
+                <a href="https://www.facebook.com/YourFacebookPage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/YourInstagramPage" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/YourTwitterPage" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@YourTikTokPage" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="footer-credit">Web Systems and Technologies Midterm Project</div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            function revealSlides() {
+                $(".slideanim").each(function () {
+                    var pos = $(this).offset().top;
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + $(window).height() - 100) {
+                        $(this).addClass("slide");
+                    }
+                });
+            }
+            revealSlides(); // run once on page load so content already in view shows up
+            $(window).scroll(revealSlides);
+        });
+    </script>
+
+</body>
+
+</html>
