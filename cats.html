@@ -2,18 +2,17 @@
 <html lang="en">
 
 <head>
-
     <title>Paws & Play - Cats Supplies Section</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="style.css" rel="stylesheet" type="text/css">
-
 </head>
 
-<body id="cats" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="cats">
 
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -26,20 +25,20 @@
                 <a class="navbar-brand" href="index.html">Paws & Play</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">t
+                <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="index.html#about">ABOUT US</a></li>
-                    <li><a href="index.html#services">SERVICES</a></li>
-                    <li><a href="index.html#products">PRODUCTS</a></li>
-                    <li><a href="index.html#package">PACKAGES</a></li>
-                    <li><a href="index.html#contact">CONTACT US</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li class="active"><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="packages.html">PACKAGES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Container (Dog Food Section) -->
-    <div id="dogfood" class="container-fluid text-center bg-grey">
+    <!-- Container (Cat Food Section) -->
+    <div id="catfood" class="container-fluid text-center bg-grey">
         <h2><strong>CAT FOOD</strong></h2>
         <h4 style="text-align: center;">Nourish Your Cat with Our Premium Selection of Cat Foods!</h4>
 
@@ -53,18 +52,16 @@
                         Made with high-quality ingredients, including real meat, our dry cat food is rich in protein and
                         essential nutrients to support your cat's overall health and vitality.</p>
                 </div>
-
             </div>
 
             <div class="col-sm-4">
                 <div class="thumbnail">
                     <img src="assets/wetcatfood.jpg" alt="wet cat food">
                     <p style="text-align: center;"><strong>Wet Cat Food</strong></p>
-                    <p> Treat your cat to the taste of real meat with our premium wet cat food.
+                    <p>Treat your cat to the taste of real meat with our premium wet cat food.
                         Made with high-quality ingredients and real animal proteins, our wet cat food is packed with
                         nutrients and moisture to keep your cat hydrated and satisfied.</p>
                 </div>
-
             </div>
             <div class="col-sm-4">
                 <div class="thumbnail">
@@ -76,10 +73,10 @@
                         bones, muscles, and overall development.</p>
                 </div>
             </div>
-        </div><br>
+        </div>
     </div>
 
-
+    <!-- Container (Other Cat Supplies Section) -->
     <div id="othersupplies" class="container-fluid text-center bg-grey">
         <h2>OTHER CAT SUPPLIES</h2>
 
@@ -99,7 +96,7 @@
                 <div class="thumbnail">
                     <img src="assets/littersand.jpg" alt="cat litter sand">
                     <p style="text-align: center;"><strong>Cat Litter Sand</strong></p>
-                    <p> Ensure your cat's comfort with our range of cat litter and litter boxes.
+                    <p>Ensure your cat's comfort with our range of cat litter and litter boxes.
                         Our litter sand is highly absorbent and helps control odors.</p>
                 </div>
             </div>
@@ -111,83 +108,69 @@
                         With ergonomic handles and durable construction, these scoops make scooping a breeze.</p>
                 </div>
             </div>
-        </div><br>
+        </div>
+        <br>
+
+        <div class="row text-center slideanim">
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="assets/scratchingpost.jpg" alt="scratching post">
+                    <p style="text-align: center;"><strong>Scratching Post</strong></p>
+                    <p>If your cat is particularly fond of scratching furniture, consider investing in a cat scratching
+                        post.
+                        These are designed to be more appealing to cats than your couch.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="assets/petcarrier.jpg" alt="pet carrier">
+                    <p style="text-align: center;"><strong>Pet Carrier</strong></p>
+                    <p>Traveling with your cat is easy with our range of cat carriers and travel accessories.
+                        Our carriers are sturdy and comfortable, ensuring your cat's safety and comfort on the go.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="assets/cattoy.jpg" alt="cat toy">
+                    <p style="text-align: center;"><strong>Toy for Cats</strong></p>
+                    <p>Keep your cat entertained for hours with our interactive toys.
+                        These toys stimulate your cat's natural instincts to hunt and play, providing both physical and
+                        mental exercise.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="row text-center slideanim">
-        <div class="col-sm-4">
-            <div class="thumbnail">
-                <img src="assets/scratchingpost.jpg" alt="scratching post">
-                <p style="text-align: center;"><strong>Scratching Post</strong></p>
-                <p>If your cat is particularly fond of scratching furniture, consider investing in a cat scratching
-                    furniture.
-                    These are designed to be more appealing to cats than your couch.</p>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-social">
+                <a href="https://www.facebook.com/YourFacebookPage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/YourInstagramPage" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/YourTwitterPage" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@YourTikTokPage" target="_blank"><i class="fab fa-tiktok"></i></a>
             </div>
-
+            <div class="footer-credit">Web Systems and Technologies Midterm Project</div>
         </div>
-
-        <div class="col-sm-4">
-            <div class="thumbnail">
-                <img src="assets/petcarrier.jpg" alt="pet carrier">
-                <p style="text-align: center;"><strong>Pet Carrier</strong></p>
-                <p>Traveling with your cat is easy with our range of cat carriers and travel accessories.
-                    Our carriers are sturdy and comfortable, ensuring your cat's safety and comfort on the go.</p>
-            </div>
-
-        </div>
-        <div class="col-sm-4">
-            <div class="thumbnail">
-                <img src="assets/cattoy.jpg" alt="cat toy">
-                <p style="text-align: center;"><strong>Toy for Cats</strong></p>
-                <p>Keep your cat entertained for hours with our interactive toys.
-                    These toys stimulate your cat's natural instincts to hunt and play, providing both physical and
-                    mental exercise.</p>
-            </div>
-        </div>
-    </div><br>
-
-
-    </div><br>
-    </div>
-
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function () {
-            // Add smooth scrolling to all internal links in navbar + footer link
-            $(".navbar a[href^='#'], footer a[href^='#']").on('click', function (event) {
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 900, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-
-            $(window).scroll(function () {
+            function revealSlides() {
                 $(".slideanim").each(function () {
                     var pos = $(this).offset().top;
-
                     var winTop = $(window).scrollTop();
-                    if (pos < winTop + 600) {
+                    if (pos < winTop + $(window).height() - 100) {
                         $(this).addClass("slide");
                     }
                 });
-            });
-        })
+            }
+            revealSlides(); // run once on page load so content already in view shows up
+            $(window).scroll(revealSlides);
+        });
     </script>
 
 </body>

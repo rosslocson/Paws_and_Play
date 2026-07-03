@@ -12,6 +12,37 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        html, body {
+            min-height: 100%;
+            margin: 0;
+            padding-top: 0; /* cancel the global fixed-navbar offset; nav is relative here */
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        #myPage .navbar-fixed-top {
+            position: relative;
+            top: auto;
+        }
+        #services {
+            flex: 1 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        #services .row {
+            width: 100%;
+        }
+        footer {
+            flex-shrink: 0;
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body id="myPage">
